@@ -1,0 +1,17 @@
+{
+"arrowParens":"avoid",
+"bracketSpacing":false,
+"endOfLine":"lf",
+"htmlWhitespaceSensitivity":"strict",
+"jsxBracketSameLine":true,
+"insertPragma": false,
+"printWidth":85,
+"proseWrap":"preserve",
+"quoteProps":"as-needed",
+"requirePragma":false,
+"semi":true,
+"singleQuote":true,
+"tabWidth":2,
+"useTabs":true,
+"embeddedLanguageFormatting":"auto"
+}
