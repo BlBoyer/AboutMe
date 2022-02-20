@@ -5,11 +5,13 @@ function App() {
   const [meDisp, setMeDisp]=useState([...Object.keys(data)]);
   const changeProp = (_index, _item) => {
     var mutated = meDisp;
+    //if the display item is a key of the object, set it to the value
     if (Object.keys(data).includes(_item)) {
-      mutated.splice(_index, 1, data[_item]);
+      //if the value is an array format it for reading
+      (typeof(data[_item])==='object') ? mutated.splice(_index, 1, data[_item].join(', ')) : mutated.splice(_index, 1, data[_item]);
       setMeDisp([...mutated]); 
     } else {
-      mutated.splice(_index,1,Object.keys(data)[_index])
+      mutated.splice(_index,1,Object.keys(data)[_index]);
       setMeDisp([...mutated]);
     }
   }
