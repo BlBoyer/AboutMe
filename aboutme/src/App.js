@@ -33,18 +33,18 @@ function App() {
   setMeDisp(Object.keys(data));
   },[]);
   return (
-    <div id="content">
-      <h1>About Me</h1>
-      <div>
-        <ul>{
-          meDisp.slice(1,).map((item, index)=>
-          <li id={'cues'+index} key={index}  className="tag" onMouseOver={()=>changeProp(index+1, item)}>
-            {item.toString()}
-          </li>
-          )
-        }</ul>
-      </div>
-  </div>
-  );
+		<div id="content">
+			<h1>About Me</h1>
+			<div>
+				<ul>
+					{meDisp.slice(1).map((item, index) => (
+						<li id={'cues' + index} key={index} className="tag" onClick={() => changeProp(index + 1, item)}>
+							{item.toString()}
+						</li>
+					))}
+				</ul>
+			</div>
+		</div>
+	);
 }
 export default App;
