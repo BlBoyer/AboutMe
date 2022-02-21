@@ -5,7 +5,7 @@
 "htmlWhitespaceSensitivity":"strict",
 "jsxBracketSameLine":true,
 "insertPragma": false,
-"printWidth":85,
+"printWidth":120,
 "proseWrap":"preserve",
 "quoteProps":"as-needed",
 "requirePragma":false,
