@@ -34,7 +34,7 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-h1{
+h1 {
   color:snow;
 }
 #page{
@@ -46,14 +46,14 @@ h1{
 }
 #content{
   width:80vw;
-  min-width:36em;
+  min-width:38em;
   height:90vh;
+  min-height: 15em;
   align-self: center;
   display:grid;
   grid-template-rows:auto;
   grid-template-areas:
   "list profile header";
-  grid-gap:10em;
   overflow: hidden;
   background-color: rgb(23, 32, 61);
 }
@@ -62,18 +62,19 @@ h1{
   min-width: max-content;
   justify-self:flex-end;
   margin-right:2em;
+  position: fixed;
 }
 #traitList{
   grid-area:list;
   min-width:fit-content;
   height:fit-content;
-    position:fixed;
+  position:fixed;
 }
 #content p {
   grid-area:profile;
   width:20em;
   height:10em;
-  margin-top:1em;
+  margin: 1em;
   justify-self:flex-start;
   display: flex;
   flex-direction: column;
@@ -82,4 +83,11 @@ h1{
   border: 2px double snow;
   border-radius:40% 8%;
   background:linear-gradient(20deg, rgb(20,20,20), rgb(60,60,60));
+}
+#footer {
+  align-self: flex-end;
+  margin-bottom:1em;
+  position: fixed;
+  display: flex;
+  align-items: left;
 }

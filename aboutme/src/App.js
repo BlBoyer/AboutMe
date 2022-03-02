@@ -61,6 +61,7 @@ function App() {
 					))}
 				</ul>
 			</div>
+			<footer id="footer">Created with React and ASP.Net WebApi</footer>
 		</div>
 	);
 }
