@@ -16,14 +16,14 @@ public static class UserService
             new Person {
                 Id = 0,
                 Name = "Ben", 
-                Skills=new List<string>(){"Mechanics", "Boat Captain", "Electrical", "Programming"},
-                Likes=new List<string>(){"Coding", "Cars", "Beer"},
+                Skills=new List<string>(){"Mechanics", "Captain", "Electrical", "Programming"},
+                Likes=new List<string>(){"Coding", "Cars", "Fishing, Games"},
                 Contact="Boyer.BenLee@gmail.com"
             }
         };
     }
     public static Person GetById(int _id) => Users[_id];
-    public static List<Person> GetAll() => Users;   //store person list in memory
+    public static List<Person> GetAll() => Users;
     public static Person? Get(int id) => Users.FirstOrDefault(p => p.Id == id);
     public static void Add(Person person)
     {
